@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <Navbar />
+    <Home />
     <h1>Welcome to Vue.js</h1>
     <p>This is my first Vue,js App</p>
     <MyComponent />
@@ -12,11 +14,15 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import MyComponent from './components/MyComponent.vue'
+import Navbar from './components/Navbar.vue'
+import Home from './views/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    MyComponent
+    MyComponent,
+    Navbar,
+    Home
   }
   // components: {
   //   HelloWorld
